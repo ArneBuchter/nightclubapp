@@ -1,0 +1,28 @@
+.pinkbox{
+    position: relative;
+    &__topleft{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 30px 30px 0 0;
+        border-color: $style-color transparent transparent transparent;
+    }
+    &__bottomright{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 30px 30px;
+        border-color: transparent transparent $style-color transparent;
+    }
+    display: grid;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid $style-color;
+    border-bottom: 1px solid $style-color;
+}

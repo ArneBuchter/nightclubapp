@@ -1,0 +1,17 @@
+.header{
+    &__container{
+        display: flex;
+        padding: 1em;
+        justify-content: space-between;
+    }
+
+    &__burgerbox{
+        align-self: center;
+    }
+
+    &__burger{
+        border-top: 2px solid $white-color;
+        margin-top: 0.3em;
+        width: 2.6em;
+    }
+}

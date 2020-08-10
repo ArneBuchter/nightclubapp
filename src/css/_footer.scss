@@ -1,0 +1,16 @@
+.footer{
+    &__some{
+        display: flex;
+    }
+
+    &__somebox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1em;
+        border: solid 5px $white-color;
+        color: $white-color;
+        width: 3em;
+        height: 3em;
+    }
+}
