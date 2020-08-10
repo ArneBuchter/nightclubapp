@@ -1,0 +1,33 @@
+.base{
+    &__bc{
+        background-color: $base-color;
+    }
+    
+    &__h1{
+        font-weight: $bold;
+        letter-spacing: 0.075em;
+        line-height: 1.1;
+    }
+
+    &__h2{
+        line-height: 1.1; 
+        font-weight: $regular; 
+        text-transform: uppercase; 
+        color: $white-color; 
+    }
+
+    &__p{
+        color: $fonts-color; 
+        font-size: 15px; 
+        line-height: 25px; 
+    }
+
+    &__goodtime{
+        line-height: 1.1; 
+        font-weight: $light; 
+        text-transform: uppercase; 
+        color: $white-color; 
+        font-size: 21px; 
+        letter-spacing: 22px; 
+    }
+}
