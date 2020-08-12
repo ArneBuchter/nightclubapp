@@ -1,3 +1,5 @@
+@import 'gallery';
+
 .index{
     &__header{
         position: absolute;
@@ -40,6 +42,14 @@
         &-imgmenu{
             width: 90%;
             margin: 2em auto 3em auto;
+        }
+    }
+    &__testa{
+        &__profileimg{
+            background-image: url(../images/footerbg.jpg);
+            background-color: rgba(3, 2, 3, 0.7);
+            background-position: center;
+            margin: 2em auto 1em auto;
         }
     }
 }

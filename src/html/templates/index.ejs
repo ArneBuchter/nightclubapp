@@ -1,5 +1,6 @@
 <%- include('../partials/headstart') %>
 <link rel="stylesheet" href="/assets/css/index.css">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <%- include('../partials/headend') %>
 
 <section class="index__hero">
@@ -12,17 +13,53 @@
 <%- include('../partials/header') %>
 
 <section class="index__welcome">
-    <div class="index__welcome-wrapper">
-        <h2 class="base__h2">welcome in night<span class="base__h2_pink">club</span></h2>
-    </div>
-    <img class="index__welcome-img" src="/assets/images/bottom_line2.png" alt="" srcset="">
+    <%- include('../partials/headline') %>welcome in night<span class="base__h2_pink">club</span>
+    <%- include('../partials/headlineend') %>
     <section class="index__welcome-imgmenu">
         <img class="index__welcome-img" src="/assets/images/thumb1.jpg" alt="" srcset="">
         <img class="index__welcome-img" src="/assets/images/reastaurant_1.jpg" alt="" srcset="">
         <img class="index__welcome-img" src="/assets/images/thumb2.jpg" alt="" srcset="">
     </section>
+</section>
 
+<article class="index__event">
+    <%- include('../partials/headline') %>events of the month
+    <%- include('../partials/headlineend') %>
+
+  <!--   <%- include('../partials/slider') %> -->
+</article>
+
+<article class="index__gallery">
+    <%- include('../partials/headline') %>night club gallery
+    <%- include('../partials/headlineend') %>
+
+    <%- include('../partials/gallery') %> 
+</article>
+
+<section class="index__testa">
+    <div class="index__testa-profileimg">
+        <img id="profilimgone" src="" alt="" srcset="">
+    </div>
+    <div class="index__testa-text">
+        
+    </div>
 </section>
 
 <%- include('../partials/footer') %>
+
+<script src="/assets/javascript/index.js"></script>
+<!-- <script src="/assets/javascript/carousel.js"></script> -->
+<script>
+
+    const myCarousel = new Carousel({
+    container: document.querySelector('.slider'),
+    items: document.querySelectorAll('.slider__item'),
+    displayControls: true,
+    controlsContainer: document.querySelector('.slider__controls'),
+    textControls: ["<i class='fas fa-chevron-left pil'></i>", "<i class='fas fa-chevron-right pil'></i>"],
+    autoplay: true,
+    autoplayTime: 4500
+    });
+ 
+</script>
 <%- include('../partials/afterfooter') %>
