@@ -7,7 +7,7 @@ fetch(`http://localhost:4000/events `,{
     .then(response => response.json())
     .then(data => {
         data.forEach(element => {        
-            console.log(element)
+    /*         console.log(element) */
             document.querySelector('#spanOne').innerText = data[0].eventDate + data[0].location;
         });
         
@@ -25,5 +25,6 @@ fetch(`http://localhost:4000/events `,{
                 document.querySelector('#imgFive').src = data[8].url;
                 document.querySelector('#imgSix').src = data[9].url;
         })
+
         
 })

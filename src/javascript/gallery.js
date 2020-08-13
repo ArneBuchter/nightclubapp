@@ -13,7 +13,6 @@ fetch(`http://localhost:4000/gallery-photos`,{
             })
             .then(response => response.json())
             .then(data => {
-                console.log(data)
                 let galimg = data.url
                 let clone = Template.content.cloneNode(true);
                 clone.querySelector('.gallery__img').src = galimg

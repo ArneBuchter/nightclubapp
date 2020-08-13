@@ -25,10 +25,17 @@
         }
     }
 
+    &__tuc{
+        text-transform: uppercase; 
+    }
+
     &__p{
         color: $fonts-color; 
         font-size: 15px; 
         line-height: 25px; 
+        &_pink{
+            color: $style-color;
+        }
     }
 
     &__goodtime{

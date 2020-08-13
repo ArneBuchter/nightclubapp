@@ -36,13 +36,19 @@
     <%- include('../partials/gallery') %> 
 </article>
 
-<section class="index__testa">
-    <div class="index__testa-profileimg">
-        <img id="profilimgone" src="" alt="" srcset="">
-    </div>
-    <div class="index__testa-text">
-        
-    </div>
+<%- include('../partials/testa') %> 
+
+<section class="subscribe">
+    <%- include('../partials/headline') %>want the latest night club news
+    <%- include('../partials/headlineend') %>
+
+    <p class="base__p">subscribe to our newsletter and never miss a <span class="base__p_pink">event</span></p>
+
+    <form class="subscribe__form" method="post" action="http://localhost:4000/newsletters">
+        <input class="subscribe__inputfelt" type="email" placeholder="Enter Your Email" name="mail" value="" required>
+        <button class="subscribe__submit">subscribe</button>
+    </form>
+
 </section>
 
 <%- include('../partials/footer') %>

@@ -1,0 +1,65 @@
+.testa{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-image: url(../images/footerbg.jpg);
+    background-position: center;
+    &__bc{
+        background-color: rgba($color: #000000, $alpha: 0.9);
+        width: 100%;
+        height: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        z-index: 1;
+    }
+    &__profileimg{
+        width: 100%;
+        margin: auto;
+        &-box{
+            width: 100%;
+            height: 50vh;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 0.5em;
+        }
+    }
+    &__textbox{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        background-image: url(../images/footerbg.jpg);
+        background-position: center;
+     //   margin: 2em 0;
+        &-bc{
+            background-color: rgba($color: #000000, $alpha: 0.8);
+            width: 100%;
+            height: 100%;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            z-index: 1;
+        }
+    }
+
+    &__wrapper{
+        padding: 1em;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        z-index: 2;
+    }
+
+    &__text{
+        text-align: center;
+        color: #e0e0e0;
+        margin: 1em 0;
+    }
+
+    &__some{
+        &-box{
+            padding: 3em;
+        }
+    }
+}
