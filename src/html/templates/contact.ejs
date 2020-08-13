@@ -10,10 +10,35 @@
     <%- include('../partials/headline') %>contact us
     <%- include('../partials/headlineend') %>
 
-    <form action="" method="post">
-        
+    <form class="contact__form" action="http://localhost:4000/messages" method="post" id="conform">
+        <input class="contact__inputfelt" type="name" placeholder="Your Name" name="name" value="" required>
+        <input class="contact__inputfelt" type="email" placeholder="Your Email" name="mail" value="" required>
+        <input class="contact__inputfelt" type="website" placeholder="Your Website" name="mail" value="">
+        <textarea class="contact__comment" type="message" name="message" form="comform">Your Comment</textarea>
+        <button class="contact__submit">submit</button>
     </form>
 </section>
+
+<section class="contact__info-box">
+    <div class="contact__info-box_grid">
+        <i class="fas fa-map-marker-alt base__p place"></i>
+        <address class="base__p contact__info-box_line">Agervej 25, DK 4400 Kalundborg, Danmark</address>
+    </div>
+    <div class="contact__info-box_grid">
+        <i class="fas fa-mobile-alt base__p place"></i>
+       <p class="base__p contact__info-box_line">+45271430</p>
+    </div>
+    <div class="contact__info-box_grid">
+        <i class="fas fa-envelope base__p place"></i>
+        <p class="base__p contact__info-box_line">@arvi.dk</p>
+    </div>
+    <div class="contact__info-box_grid">
+        <i class="fas fa-globe base__p place"></i>
+        <p class="base__p contact__info-box_line">www.arvi.dk</p>        
+    </div>
+</section>
+<div class="contact__pinkbox"></div>
+
 
     <%- include('../partials/footer') %>
 
