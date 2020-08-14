@@ -1,5 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+let welcome = document.querySelector('.index__welcome-imgwrapper');
+let hoveritem = document.querySelector('.index__hidden')
+
+welcome.addEventListener('click', (e) => {
+    console.log(e.target)
+    if(e.target.classList.contains('index__welcome-img')){
+        hoveritem.classList.add('index__hover')
+    }else if(e.target.classList.contains('pinkbox')){
+        hoveritem.classList.remove('index__hover')
+    }
+})
+
 fetch(`http://localhost:4000/events `,{
         'method': 'GET'
 
